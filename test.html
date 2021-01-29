@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- load bootstrap via CDN (online)-->
+	<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		crossorigin="anonymous">
+	<!--load bootstrap locally -->
+	<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="index.html">Home</a> <!-- website branding (can include logo / pic) -->
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="main-navigation">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="prevent.html">Prevention</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<h1></h1>
+	<br>
+	<h1><p style="text-align:center">Check Symptoms</p></h1>
+	<br>
+	<p style="text-align:center">Please tick on the symptoms you have been feeling lately.</p><br>
+
+	<form action="/action_page.php">
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<input type="checkbox" id="symptom1" name="symptom1" value="temperature">
+			<label for="symptom1">Temperature higher than 38.0°C</label><br>
+		</div>
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<input type="checkbox" id="symptom2" name="symptom2" value="rash">
+			<label for="symptom2"> Skin rashes</label><br>
+		</div>
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<input type="checkbox" id="symptom3" name="symptom3" value="joint">
+			<label for="symptom3"> Joint and muscle pain</label><br>
+		</div>
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<input type="checkbox" id="symptom4" name="symptom4" value="nausea">
+			<label for="symptom4"> Headache</label><br>
+		</div>
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<input type="checkbox" id="symptom5" name="symptom5" value="vomit">
+			<label for="symptom5"> Nausea</label><br>
+		</div>
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<input type="checkbox" id="symptom6" name="symptom6" value="eyes">
+			<label for="symptom6"> Vomiting</label><br>
+		</div>
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<input type="checkbox" id="symptom7" name="symptom7" value="eyes">
+			<label for="symptom7"> Pain behind eyes</label><br>
+		</div>
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<input type="checkbox" id="symptom7" name="symptom7" value="eyes">
+			<label for="symptom7"> Symptoms duration more than two days</label><br>
+		</div><br>
+		<br>
+		<p style="text-align:center">
+	</form>
+	<p style="text-align:center">
+		<button class="btn btn-outline-emergency btn-lg" onclick="document.location='result.html'">Submit</button>
+		<br/>
+	</p>
+
+
+
+
+<!-- include jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous">
+</script>
+<!-- include jQuery locally-->
+<!-- <script src="jquery-3.3.1.min.js"></script> -->
+
+
+
+<!-- load bootstrap Javascript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+crossorigin="anonymous">
+</script>
+<!-- load bootstrap Javascript locally-->
+<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+
+
+
+<!-- calling js text file -->
+<script src="main.js"></script>
+</body>
+
+
+
+
+
+</html>

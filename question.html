@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Question</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- load bootstrap via CDN (online)-->
+	<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		crossorigin="anonymous">
+	<!--load bootstrap locally -->
+	<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="index.html">Home</a> <!-- website branding (can include logo / pic) -->
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="main-navigation">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="prevent.html">Prevention</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	
+	<h1><p style="text-align:center">Check Symptoms</p></h1>
+	<br><br>
+	<form name="question" id="question" style="text-align:center">
+		<div>
+			<p> 1. Is your temperature higher than 38.0°C?</p>
+			<p><input type="radio" name="question1" value="Normal" checked> Normal</p>
+			<p><input type="radio" name="question1" value="High"> High</p>
+		</div>
+			<br><br>
+		<div>
+			<p> 2. Do you have skin rashes?</p>
+			<p><input type="radio" name="question2" value="No" checked> No</p>
+			<p><input type="radio" name="question2" value="Yes">  Yes</p>
+		</div>
+			<br><br>
+	
+		<div>
+			<p> 3. Do your joint and muscle feel pain?</p>
+			<p><input type="radio" name="question3" value="No" checked> No</p>
+			<p><input type="radio" name="question3" value="Yes"> Yes</p>
+		</div>
+			<br><br>
+		<div>
+			<p> 4. Do you feel pain behind your eyes?</p>
+			<p><input type="radio" name="question4" value="No" checked> No</p>
+			<p><input type="radio" name="question4" value="Yes"> Yes</p>
+		</div>
+			<br><br>
+		<div>
+			<p> 5. Do you feel nauseous?</p>
+			<p><input type="radio" name="question5" value="No" checked> No</p>
+			<p><input type="radio" name="question5" value="Yes"> Yes</p>
+		</div>
+			<br><br>
+		<div>
+			<p> 6. Have you ever vomited?</p>
+			<p><input type="radio" name="question6" value="No" checked> No</p>
+			<p><input type="radio" name="question6" value="Yes"> Yes</p>
+		</div>
+			<br><br>
+		<div>
+			<p> 7. Do you get headache?</p>
+			<p><input type="radio" name="question7" value="No" checked> No</p>
+			<p><input type="radio" name="question7" value="Yes"> Yes</p>
+		</div>
+			<br><br>
+		<div>
+			<p> 8. How long have you been feeling about the symptoms?</p>
+			<p><input type="radio" name="question8" value="Less" checked> Less than two days</p>
+			<p><input type="radio" name="question8" value="More"> More than two days</p>
+		</div>
+			<br><br>
+			
+			
+		<!--submit button-->
+		<input type="button" name="" value="Submit" id="button" onclick="check()">
+		<br><br>
+	</form>
+	<!-- result, sambung ke js-->
+	<p id="result" style="text-align:center"></p>
+
+	<!-- include jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous">
+	</script>
+	<!-- include jQuery locally-->
+	<!-- <script src="jquery-3.3.1.min.js"></script> -->
+	<!-- load bootstrap Javascript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous">
+	</script>
+	<!-- load bootstrap Javascript locally-->
+	<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+	<!-- calling js text file -->
+	 
+	<script type="text/javascript" src="main1.js"></script>
+</body>
+</html>
+
+
+		
